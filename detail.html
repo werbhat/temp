@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Transmission</title>
+    <style>
+        body {
+            background-image: url('./Network Login_files/suez-1-retouche.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: red;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: blue;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 13px;
+        }        
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: #555;
+        }
+        img {
+            display: block;
+            margin: 30px auto;
+            max-width: 80%;
+        }
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1em;
+            color: #333;
+        }
+        li {
+            margin-bottom: 10px;
+            font-size: 1em;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ALERTE ! VOUS VENEZ DE TRANSMETTRE DES INFORMATIONS SENSIBLE !</h1>
+        <h1>MAIS NE VOUS INQUIETEZ PAS, CECI ETAIT UNE SIMULATION POUR UN EXERCICE DE SENISBILISATION ET AUCUN MOT DE PASSE N'A ETE RECUPERE.</h1>
+        <h2 style="color: chocolate;">Pour toutes informations, contactez Marc votre RSSI</h2>
+        <h2>Comprendre ce qui s'est passé !</h2>
+        <p>Les renseignements que vous avez fournis ont été transmis via une plateforme en ligne appelée "Evil portal". Le but de ce portail web est de tromper la victime en se faisant passer pour un portail web officiel. Plutôt que d'envoyer les informations à un site légitime, il les envoie vers le site de l'attaquant. Les informations envoyées peuvent être de plusieurs types: Informations saisies dans le formulaire, informations de l'appareil de la victime, etc... Mais avec des scripts plus sophistiqués, il est tout a fait possible de forcer le téléchargement d'un script malveillant sur l'appareil de la victime pour qu'il réalise des actions malveillantes. Ces scripts peuvent être des virus, des malwares, des ransomwares, etc... </p>
+        <p>Mais afin de mieux comprendre comment cela fonctionne, voici ci-dessous des détails sur le processus d'attaque"</p>
+        <h2>Schéma d'attaque :</h2>
+        <ul>
+          <li>1. RECONNAISSANCE :</li>
+          <p>L'attaquant a effectué une reconnaissance sur le site puis s'est rendu à l'accueil. Durant son intrusion, il a réalisé une recherche des réseaux WI-FI. Il a pu ensuite réaliser un enregistrement, à l'aide de son téléphone, de la page d'accueil d'inscription au réseau Wi-Fi visiteur.</p>
+          <li>2. PREPARATION DE L'ATTAQUE :</li>
+          <p>L'attaquant est rentré chez lui et a eu tout le temps de préparer son attaque. Il a préparé un faux site internet qui ressemble à celui de la page d'accueil WiFi visiteur. Puis, il a réalisé une affiche avec un QR code qui redirige vers le faux site.</p>
+          <li>3. LIVRAISON :</li>
+          <p>L'attaquant a pu de nouveau accédé au site pour afficher son document.</p>
+          <li>4. ATTENTE :</li>
+          <p>L'attaquant n'a plus qu'a entendre qu'une ou des victimes scannent le QRcode et renseigne les informations.</p>
+          <li>5. EXPLOITATION :</li>
+          <p>Les informations recueillies par l'attaquant n'ont plus qu'à être exploitées. Dans notre cas, si vous avez envoyé vos identifiants de session Windows SUEZ, ils permettront à l'attaquant de se connecter à votre compte SUEZ pour ensuite escalader son attaque.</p>
+          <li>6. ESCALADE DE PRIVILEGE :</li>
+          <p>L'escalade de privilège consiste à chercher, par plusieurs technique, des informations pour obtenir des droits priviligiés sur le système pour ensuite activer sont attaques.</p>
+        </ul>
+        <p style="color: violet;">La suite est plus complexe et la réussite de l'attaque dépend alors des faiblesses du système informatique et du réseau.</p>
+        <img src="./Network Login_files/schematic_image.png" alt="Schéma de'attaque par phishing">
+        <h2>Quels sont les vulnérabilités et techniques utilisés par l'attaquant ?</h2>
+        <ul>
+          <li>Vulnérabilités :</li>
+          <p>L'attaquant va utiliser des faiblesses systèmes mais aussi humaines qui peuvent être diverses, voici quelques exemples :</p>
+          <ul>
+            <li>Failles humaines</li>
+            <li>Curiosité et intérêt personnel</li>
+            <li>Non surveillance des locals et des visiteurs</li>
+            <li>Problème d'organisation interne et suractivité</li>
+            <li>Failles informatiques</li>
+            <li>Pannes des systèmes de controles d'accès</li>
+            <li>Manque de sécurisation d'un site et des systèmes</li>
+          </ul>
+          <li>Techniques :</li>
+          <p>Les techniques sont également multiples et les attaquants peuvent faire appelle à des solutions ingénieuses. Mais souvent, il n'est pas forcément nécessaire de faire beaucoup d'effort pour mener ces attaques.</p>
+          <ul>
+            <li>Ingénierie sociale</li>
+            <li>Technique d'attaque par QRcode, le "quishing"</li>
+            <li>Plus généralement, le phishing</li>
+            <li>Attaque de l'homme du milieu, MITM "Man In The Middel"</li>
+            <li>Faux site ou "Evil Portal"</li>
+          </ul>
+        </ul>
+        <h2>Bonnes Pratiques et comment limiter les risques</h2>
+        <ul>
+            <li>Ne scannez pas de QRcode dans les lieux public ou au travail.</li>
+            <li>Vérifiez les adresses des sites que vous visitez sur votre navigateur</li>
+            <li>Ne cliquez pas sur les liens présent dans vos emails</li>
+            <li>Utilisez des mots de passe forts et uniques pour chaque compte.</li>
+            <li>Activez l'authentification à deux facteurs.</li>
+            <li>Méfiez-vous des e-mails et des liens suspects.</li>
+        </ul>
+    </div>
+</body>
+</html>
